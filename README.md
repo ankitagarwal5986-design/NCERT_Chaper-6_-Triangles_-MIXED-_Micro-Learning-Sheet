@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain and Mind Academy | Class 10 CBSE: Chapter 6 Triangles - Mixed Chapter Test</title>
+  
+  <!-- MathJax Configuration for Proper Mathematical Equation Typesetting -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady();
+        }
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --primary-dark: #0f172a;
+      --accent-gold: #d97706;
+      --accent-gold-light: #fef3c7;
+      --correct-green: #059669;
+      --correct-green-light: #d1fae5;
+      --incorrect-red: #dc2626;
+      --incorrect-red-light: #fee2e2;
+      --skipped-amber: #f59e0b;
+      --skipped-amber-light: #fffbeb;
+      --unvisited-gray: #94a3b8;
+      --unvisited-light: #f1f5f9;
+      --bg-slate: #f8fafc;
+      --card-white: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background-color: var(--bg-slate);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+      color: #ffffff; padding: 1rem 1.5rem; box-shadow: var(--shadow-md); position: sticky; top: 0; z-index: 100;
+    }
+    .header-container {
+      max-width: 1440px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .brand-group { display: flex; align-items: center; gap: 12px; }
+    .brand-logo {
+      width: 42px; height: 42px; background: linear-gradient(135deg, #fbbf24, #d97706);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; font-size: 1.25rem;
+    }
+    .brand-title h1 { font-size: 1.15rem; font-weight: 700; }
+    .brand-title p { font-size: 0.8rem; color: #93c5fd; }
+    .user-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .user-badge {
+      background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; color: #f1f5f9; display: flex; align-items: center; gap: 6px;
+    }
+    .btn-icon {
+      background: rgba(255, 255, 255, 0.15); border: none; color: #ffffff; padding: 8px 12px; border-radius: var(--radius-sm); cursor: pointer; font-size: 0.85rem; font-weight: 600;
+    }
+    .btn-icon:hover { background: rgba(255, 255, 255, 0.25); }
+
+    main { max-width: 1440px; width: 100%; margin: 1.5rem auto; padding: 0 1rem; flex: 1; }
+    .view-section { display: none; }
+    .view-section.active { display: block; animation: fadeIn 0.25s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Login Screen */
+    .card-center { max-width: 560px; margin: 3.5rem auto; background: var(--card-white); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); text-align: center; }
+    .login-icon { width: 64px; height: 64px; background: #eff6ff; color: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto; font-size: 2rem; }
+    .form-group { text-align: left; margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+    .form-control { width: 100%; padding: 12px; border: 1.5px solid var(--border-color); border-radius: var(--radius-sm); font-size: 1rem; outline: none; }
+    .form-control:focus { border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15); }
+    .btn-primary { width: 100%; background: linear-gradient(135deg, var(--primary-blue), #2563eb); color: #ffffff; border: none; padding: 13px; font-weight: 700; font-size: 1rem; border-radius: var(--radius-sm); cursor: pointer; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25); }
+    .btn-primary:hover { box-shadow: 0 6px 12px rgba(37, 99, 235, 0.35); transform: translateY(-1px); }
+
+    /* Test Banner */
+    .test-info-strip {
+      background: #eff6ff; border: 1px solid #bfdbfe; border-radius: var(--radius-sm); padding: 8px 14px; margin-bottom: 1rem;
+      display: flex; justify-content: space-between; align-items: center; font-size: 0.88rem; font-weight: 600; color: #1e40af;
+    }
+
+    /* Learning Workspace Grid */
+    .learning-grid-layout { display: grid; grid-template-columns: 1fr 380px; gap: 1.5rem; align-items: start; }
+    @media (max-width: 1080px) { .learning-grid-layout { grid-template-columns: 1fr; } }
+    
+    .problem-card { background: var(--card-white); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); }
+    .problem-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-color); }
+    .p-tag { font-size: 1.15rem; font-weight: 800; color: var(--primary-blue); }
+    .status-badge { font-size: 0.8rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; text-transform: uppercase; }
+    .badge-unvisited { background: var(--unvisited-light); color: var(--unvisited-gray); }
+    .badge-progress { background: #dbeafe; color: #1e40af; }
+    .badge-complete { background: var(--correct-green-light); color: var(--correct-green); }
+    .badge-skipped { background: var(--skipped-amber-light); color: var(--skipped-amber); }
+
+    .problem-context { font-size: 1.15rem; font-weight: 500; margin-bottom: 1.25rem; background: #f8fafc; border-left: 4px solid var(--accent-gold); padding: 16px 20px; border-radius: var(--radius-sm); line-height: 2.2; }
+
+    /* Geometric Diagram Card */
+    .diagram-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      margin: 1rem 0 1.5rem 0;
+      box-shadow: inset 0 0 8px rgba(0,0,0,0.02);
+    }
+    .diagram-svg {
+      max-width: 380px;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Progressive Multi-Step Fill-in Cards */
+    .steps-container { display: flex; flex-direction: column; gap: 1.25rem; }
+    .step-card { border: 2px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; background: #ffffff; transition: all 0.25s ease-in-out; animation: slideDown 0.3s ease-out; }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .step-card.active { border-color: #3b82f6; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.12); }
+    .step-card.completed { border-color: var(--correct-green); background: #fcfdfc; }
+    
+    .step-header-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+    .step-title-text { font-weight: 700; font-size: 1rem; color: var(--primary-dark); }
+    .step-marks-tag { background: #fef3c7; color: #b45309; font-weight: 700; font-size: 0.78rem; padding: 2px 8px; border-radius: 4px; border: 1px solid #fde68a; }
+    .step-status-indicator { font-size: 0.8rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+    .step-card.completed .step-status-indicator { background: var(--correct-green-light); color: var(--correct-green); }
+    .step-card.active .step-status-indicator { background: #dbeafe; color: #1e40af; }
+
+    .step-prompt { font-size: 1.05rem; font-weight: 500; margin-bottom: 1rem; color: var(--text-main); line-height: 2.4; }
+
+    /* Step Inputs */
+    .step-input {
+      display: inline-block; width: 160px; padding: 6px 10px; font-size: 1.05rem; font-weight: 700; font-family: 'Segoe UI', monospace;
+      text-align: center; color: var(--primary-blue); background: #ffffff; border: 2px solid #94a3b8; border-radius: var(--radius-sm); outline: none; margin: 0 4px; vertical-align: middle;
+    }
+    .step-input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2); }
+    .step-input.input-correct { border-color: var(--correct-green) !important; background: var(--correct-green-light) !important; color: #065f46 !important; }
+    .step-input.input-incorrect { border-color: var(--incorrect-red) !important; background: var(--incorrect-red-light) !important; color: #991b1b !important; }
+
+    .step-controls { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--border-color); }
+    .step-feedback-msg { font-size: 0.88rem; font-weight: 600; }
+    .step-feedback-msg.correct { color: #166534; }
+    .step-feedback-msg.incorrect { color: #b91c1c; }
+
+    /* Tools Panel */
+    .tools-panel {
+      background: #f8fafc; border: 1.5px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1.25rem;
+    }
+    .tool-tab-header {
+      display: flex; gap: 8px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 8px; margin-bottom: 12px;
+    }
+    .tool-tab-btn {
+      background: none; border: none; font-size: 0.85rem; font-weight: 700; color: var(--text-muted); cursor: pointer; padding: 4px 8px; border-radius: 4px;
+    }
+    .tool-tab-btn.active {
+      color: var(--primary-blue); background: #e0e7ff;
+    }
+    .math-pad-grid {
+      display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px;
+    }
+    .math-pad-btn {
+      background: #ffffff; border: 1px solid #cbd5e1; padding: 8px 4px; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.95rem; cursor: pointer; text-align: center;
+    }
+    .math-pad-btn:hover { background: var(--primary-blue); color: #ffffff; border-color: var(--primary-blue); }
+
+    /* Calculator View */
+    .calc-box {
+      background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 10px;
+    }
+    .calc-screen {
+      width: 100%; background: #0f172a; color: #38bdf8; font-family: monospace; font-size: 1.1rem; padding: 10px; border-radius: 4px; text-align: right; margin-bottom: 8px; overflow-x: auto;
+    }
+    .calc-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+    }
+    .calc-btn {
+      background: #f1f5f9; border: 1px solid #cbd5e1; padding: 8px; border-radius: 4px; font-weight: 700; font-size: 0.9rem; cursor: pointer; text-align: center;
+    }
+    .calc-btn:hover { background: #e2e8f0; }
+    .calc-btn.op { background: #dbeafe; color: #1e40af; }
+    .calc-btn.eq { background: #059669; color: #fff; }
+
+    /* Palette Sidebar */
+    .palette-card { background: var(--card-white); border-radius: var(--radius-lg); padding: 1.25rem; border: 1px solid var(--border-color); position: sticky; top: 90px; box-shadow: var(--shadow-md); }
+    .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin: 1rem 0; max-height: 280px; overflow-y: auto; padding-right: 4px; }
+    .palette-btn { aspect-ratio: 1; border-radius: var(--radius-sm); border: 1.5px solid var(--border-color); background: var(--unvisited-light); color: var(--text-muted); font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s ease; font-size: 0.85rem; }
+    .palette-btn.active { border: 2.5px solid #2563eb !important; background: #dbeafe !important; color: var(--primary-blue) !important; }
+    .palette-btn.completed { background: var(--correct-green) !important; color: #ffffff !important; border-color: var(--correct-green) !important; }
+    .palette-btn.progress { background: #93c5fd !important; border-color: #3b82f6 !important; color: #0f172a !important; }
+    .palette-btn.skipped { background: var(--skipped-amber) !important; color: #ffffff !important; border-color: var(--skipped-amber) !important; }
+    .palette-legend { border-top: 1px solid var(--border-color); padding-top: 0.75rem; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 0.75rem; }
+    .legend-item { display: flex; align-items: center; gap: 4px; color: var(--text-muted); }
+    .legend-color { width: 10px; height: 10px; border-radius: 2px; }
+
+    .problem-action-bar { display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border-color); margin-top: 1.5rem; flex-wrap: wrap; gap: 10px; }
+    .btn { padding: 9px 16px; border-radius: var(--radius-sm); font-weight: 700; font-size: 0.92rem; cursor: pointer; border: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
+    .btn-step-check { background: var(--primary-blue); color: #ffffff; }
+    .btn-step-check:hover:not(:disabled) { background: #1d4ed8; }
+    .btn-step-back { background: #f1f5f9; color: var(--text-main); border: 1px solid var(--border-color); }
+    .btn-secondary { background: #e2e8f0; color: var(--text-main); }
+    .btn-skip { background: #ffffff; color: var(--skipped-amber); border: 1.5px solid var(--skipped-amber); }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Results Review Sheet */
+    .score-hero-card { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%); color: #ffffff; border-radius: var(--radius-lg); padding: 2.5rem 2rem; text-align: center; margin-bottom: 2rem; box-shadow: var(--shadow-lg); }
+    .score-circle { width: 115px; height: 115px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 4px solid var(--accent-gold); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto 1rem auto; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; max-width: 600px; margin: 1.5rem auto 0 auto; }
+    .stat-pill { background: rgba(255,255,255,0.1); padding: 10px; border-radius: var(--radius-md); }
+    .review-card { background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-sm); line-height: 2.2; }
+
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(15,23,42,0.65); backdrop-filter: blur(3px); z-index: 999; align-items: center; justify-content: center; padding: 1rem; }
+    .modal-overlay.active { display: flex; }
+    .modal-box { background: #ffffff; max-width: 480px; width: 100%; border-radius: var(--radius-lg); padding: 2rem; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-logo">&Delta;</div>
+        <div class="brand-title">
+          <h1>Brain and Mind Academy</h1>
+          <p>Class 10 CBSE Mathematics • Chapter 6: Triangles (Comprehensive Mixed Chapter Test)</p>
+        </div>
+      </div>
+      <div class="user-actions" id="headerActions" style="display: none;">
+        <div class="user-badge"><span id="userEmailSpan">student@academy.com</span></div>
+        <button class="btn-icon" id="soundToggleBtn"><span id="soundIcon">🔊</span></button>
+        <button class="btn-icon" id="switchUserBtn">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- 1. Authentication Portal -->
+    <section id="loginView" class="view-section active">
+      <div class="card-center">
+        <div class="login-icon">📐</div>
+        <h2>Chapter 6 Triangles: Mixed Chapter Assessment</h2>
+        <p>15 High-Yield Questions combining Exercise 6.1, Exercise 6.2, Exercise 6.3, and standard NCERT board exam examples with step-by-step mark allocation.</p>
+        <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:12px; margin-bottom:1.5rem; text-align:left; font-size:0.9rem; color:#475569;">
+          <strong>📋 Test Information:</strong><br>
+          • Total Questions: <strong>15 Problems</strong><br>
+          • Total Marks: <strong>35 Marks</strong> (Detailed Step-by-Step Marking)<br>
+          • Topics: Similarity Criteria (AA, SSS, SAS), BPT, Converse of BPT, Trapezium Diagonals, Shadows.
+        </div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="studentEmail">Student Verification Email ID</label>
+            <input type="email" id="studentEmail" class="form-control" placeholder="student@academy.com" required autocomplete="email" />
+          </div>
+          <button type="submit" class="btn-primary">Begin 15-Question Test →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 2. Dynamic Guided Learning Workspace -->
+    <section id="sheetView" class="view-section">
+      <div class="learning-grid-layout">
+        
+        <!-- Left Side: Active Problem & Step Sequence -->
+        <div class="problem-card">
+          <div class="test-info-strip">
+            <span>Chapter 6: Triangles Mixed Test</span>
+            <span id="questionMarksDisplay">Total: 2 Marks</span>
+          </div>
+
+          <div class="problem-header">
+            <div class="p-tag" id="pNumberDisplay">Problem 1 of 15</div>
+            <div class="status-badge badge-unvisited" id="pStatusBadge">Unvisited</div>
+          </div>
+          
+          <div class="problem-context" id="pContextDisplay"></div>
+
+          <!-- Diagram Display Container -->
+          <div id="diagramDisplayContainer" class="diagram-container" style="display:none;"></div>
+
+          <!-- On-Screen Math Input Pad & Built-in Calculator Widget -->
+          <div class="tools-panel">
+            <div class="tool-tab-header">
+              <button class="tool-tab-btn active" id="tabPadBtn" onclick="switchToolTab('pad')">⌨️ Math Symbol Pad</button>
+              <button class="tool-tab-btn" id="tabCalcBtn" onclick="switchToolTab('calc')">🧮 Interactive Scientific Calculator</button>
+            </div>
+            
+            <!-- Virtual Math Pad -->
+            <div id="mathPadView">
+              <div class="math-pad-grid">
+                <button class="math-pad-btn" onclick="insertSymbol('/')">/</button>
+                <button class="math-pad-btn" onclick="insertSymbol('x')">x</button>
+                <button class="math-pad-btn" onclick="insertSymbol('cm')">cm</button>
+                <button class="math-pad-btn" onclick="insertSymbol('√')">√</button>
+                <button class="math-pad-btn" onclick="insertSymbol('-')">-</button>
+                <button class="math-pad-btn" onclick="insertSymbol('+')">+</button>
+                <button class="math-pad-btn" onclick="insertSymbol('(')">(</button>
+                <button class="math-pad-btn" onclick="insertSymbol(')')">)</button>
+                <button class="math-pad-btn" onclick="insertSymbol('AA')">AA</button>
+                <button class="math-pad-btn" onclick="insertSymbol('SAS')">SAS</button>
+                <button class="math-pad-btn" onclick="insertSymbol('SSS')">SSS</button>
+                <button class="math-pad-btn" style="background:#fef2f2; color:#dc2626;" onclick="clearActiveField()">Clear</button>
+              </div>
+            </div>
+
+            <!-- Built-in Calculator -->
+            <div id="calcView" style="display:none;">
+              <div class="calc-box">
+                <div class="calc-screen" id="calcScreen">0</div>
+                <div class="calc-grid">
+                  <button class="calc-btn" onclick="calcAppend('(')">(</button>
+                  <button class="calc-btn" onclick="calcAppend(')')">)</button>
+                  <button class="calc-btn" onclick="calcClear()">C</button>
+                  <button class="calc-btn op" onclick="calcAppend('/')">/</button>
+                  <button class="calc-btn" onclick="calcAppend('7')">7</button>
+                  <button class="calc-btn" onclick="calcAppend('8')">8</button>
+                  <button class="calc-btn" onclick="calcAppend('9')">9</button>
+                  <button class="calc-btn op" onclick="calcAppend('*')">*</button>
+                  <button class="calc-btn" onclick="calcAppend('4')">4</button>
+                  <button class="calc-btn" onclick="calcAppend('5')">5</button>
+                  <button class="calc-btn" onclick="calcAppend('6')">6</button>
+                  <button class="calc-btn op" onclick="calcAppend('-')">-</button>
+                  <button class="calc-btn" onclick="calcAppend('1')">1</button>
+                  <button class="calc-btn" onclick="calcAppend('2')">2</button>
+                  <button class="calc-btn" onclick="calcAppend('3')">3</button>
+                  <button class="calc-btn op" onclick="calcAppend('+')">+</button>
+                  <button class="calc-btn" onclick="calcAppend('0')">0</button>
+                  <button class="calc-btn" onclick="calcAppend('.')">.</button>
+                  <button class="calc-btn op" onclick="calcSqrt()">√</button>
+                  <button class="calc-btn eq" onclick="calcEval()">=</button>
+                </div>
+                <div style="margin-top:6px; display:flex; justify-content:flex-end;">
+                  <button class="btn btn-secondary" style="font-size:0.8rem; padding:4px 8px;" onclick="calcInsertToField()">↳ Insert Result into Input</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Progressive Step Stack -->
+          <div class="steps-container" id="stepsListContainer"></div>
+
+          <!-- Problem Navigation Bar -->
+          <div class="problem-action-bar">
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-secondary" id="prevProblemBtn">← Prev Question</button>
+              <button class="btn btn-secondary" id="nextProblemBtn">Next Question →</button>
+            </div>
+            <button class="btn btn-skip" id="skipProblemBtn">Skip Question</button>
+          </div>
+        </div>
+
+        <!-- Right Side: Sidebar Navigation Palette -->
+        <aside class="palette-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <strong style="color:var(--primary-dark); font-size:1.02rem;">Test Questions</strong>
+            <span style="font-size:0.85rem; color:var(--accent-gold); font-weight:700;" id="completionRateText">0/15 Solved</span>
+          </div>
+          <div class="palette-grid" id="paletteGridContainer"></div>
+          <div class="palette-legend">
+            <div class="legend-item"><div class="legend-color" style="background: var(--correct-green);"></div> Completed</div>
+            <div class="legend-item"><div class="legend-color" style="background: #93c5fd;"></div> Working</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--skipped-amber);"></div> Skipped</div>
+            <div class="legend-item"><div class="legend-color" style="background: var(--unvisited-light); border:1px solid var(--border-color);"></div> Empty</div>
+          </div>
+          <button class="btn btn-primary" id="finishAssessmentBtn" style="margin-top: 1.25rem; width: 100%;">Submit Test & View Report</button>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 3. Final Review & Score Dashboard -->
+    <section id="reviewView" class="view-section">
+      <div class="score-hero-card">
+        <span class="topic-pill" style="background:rgba(255,255,255,0.15); color:#fcd34d;">Official Score Report</span>
+        <h2 style="margin: 0.5rem 0; font-size: 1.7rem;">Chapter 6 Triangles Comprehensive Test</h2>
+        <div class="score-circle">
+          <div id="finalScoreVal" style="font-size:2rem; font-weight:800;">0</div>
+          <div id="finalMarksOutOf" style="font-size:0.8rem; color:#93c5fd;">out of 35 Marks</div>
+        </div>
+        <p id="performanceFeedbackDesc" style="color: #cbd5e1; font-size:0.95rem; max-width:520px; margin:0 auto;"></p>
+        <div class="stats-row">
+          <div class="stat-pill"><div style="font-size:0.75rem; color:#cbd5e1;">Score %</div><div id="accuracyStat" style="font-size:1.2rem; font-weight:700;">0%</div></div>
+          <div class="stat-pill"><div style="font-size:0.75rem; color:#cbd5e1;">Questions Solved</div><div id="correctCountStat" style="font-size:1.2rem; font-weight:700; color:#4ade80;">0</div></div>
+          <div class="stat-pill"><div style="font-size:0.75rem; color:#cbd5e1;">Skipped</div><div id="skippedCountStat" style="font-size:1.2rem; font-weight:700; color:#fbbf24;">0</div></div>
+        </div>
+        <div style="margin-top: 1.5rem; display:flex; justify-content:center; gap:10px;">
+          <button class="btn" style="background: rgba(255,255,255,0.2); color:#fff;" id="retakeQuizBtn">↺ Retake Test</button>
+          <button class="btn" style="background:#fff; color:var(--primary-dark);" onclick="window.print()">🖨️ Print Solutions</button>
+        </div>
+      </div>
+      <h3 style="color: var(--primary-dark); margin-bottom:1rem;">Complete Step-by-Step Marking Solutions (15 Questions)</h3>
+      <div id="reviewListContainer"></div>
+    </section>
+
+  </main>
+
+  <!-- Submit Modal -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal-box">
+      <h3 style="color:var(--primary-dark); margin-bottom:0.5rem;">Submit Test?</h3>
+      <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1.25rem;">Are you sure you want to finish the test and generate your performance report card?</p>
+      <div style="display:flex; justify-content:center; gap:10px;">
+        <button class="btn btn-secondary" id="cancelModalBtn">Continue Test</button>
+        <button class="btn btn-primary" id="confirmSubmitModalBtn" style="width:auto;">Submit Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ==========================================================================
+       SVG GEOMETRIC DIAGRAMS FOR MIXED CHAPTER 6 TEST
+       ========================================================================== */
+    const DIAGRAM_PRESETS = {
+      // Ex 6.1 Q3: Rhombus vs Square
+      rhombus_square: `
+        <svg class="diagram-svg" viewBox="0 0 340 140" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="40,110 80,30 140,30 100,110" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+          <text x="30" y="125" font-size="12" font-weight="700">S</text>
+          <text x="75" y="24" font-size="12" font-weight="700">P</text>
+          <text x="145" y="24" font-size="12" font-weight="700">Q</text>
+          <text x="105" y="125" font-size="12" font-weight="700">R</text>
+          <text x="90" y="75" font-size="11" fill="#b45309">1.5 cm</text>
+          <rect x="200" y="30" width="80" height="80" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+          <text x="190" y="25" font-size="12" font-weight="700">A</text>
+          <text x="285" y="25" font-size="12" font-weight="700">B</text>
+          <text x="285" y="125" font-size="12" font-weight="700">C</text>
+          <text x="190" y="125" font-size="12" font-weight="700">D</text>
+          <text x="240" y="75" font-size="11" fill="#1d4ed8">3.0 cm (90&deg;)</text>
+        </svg>
+      `,
+      // Ex 6.2 Q1: Triangle DE || BC
+      triangle_de_bc: `
+        <svg class="diagram-svg" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="160,20 40,175 280,175" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+          <text x="160" y="14" font-size="14" font-weight="700" text-anchor="middle">A</text>
+          <text x="22" y="185" font-size="14" font-weight="700">B</text>
+          <text x="288" y="185" font-size="14" font-weight="700">C</text>
+          
+          <line x1="100" y1="98" x2="220" y2="98" stroke="#2563eb" stroke-width="2.5"/>
+          <text x="80" y="102" font-size="14" font-weight="700" fill="#2563eb">D</text>
+          <text x="230" y="102" font-size="14" font-weight="700" fill="#2563eb">E</text>
+          
+          <text x="112" y="58" font-size="12" font-weight="700" fill="#059669">1.5 cm</text>
+          <text x="56" y="142" font-size="12" font-weight="700" fill="#059669">3 cm</text>
+          <text x="200" y="58" font-size="12" font-weight="700" fill="#059669">1 cm</text>
+          <text x="256" y="142" font-size="12" font-weight="700" fill="#dc2626">EC = ?</text>
+        </svg>
+      `,
+      // Ex 6.2 Q3: LM || CB and LN || CD
+      quad_lm_ln: `
+        <svg class="diagram-svg" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,90 170,25 310,90 170,155" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+          <line x1="30" y1="90" x2="310" y2="90" stroke="#0f172a" stroke-width="2"/>
+          <text x="14" y="94" font-size="14" font-weight="700">A</text>
+          <text x="168" y="18" font-size="14" font-weight="700">B</text>
+          <text x="318" y="94" font-size="14" font-weight="700">C</text>
+          <text x="168" y="172" font-size="14" font-weight="700">D</text>
+          
+          <line x1="100" y1="57" x2="200" y2="90" stroke="#2563eb" stroke-width="2.5"/>
+          <line x1="100" y1="123" x2="200" y2="90" stroke="#2563eb" stroke-width="2.5"/>
+          <text x="90" y="50" font-size="13" font-weight="700" fill="#2563eb">M</text>
+          <text x="204" y="84" font-size="13" font-weight="700" fill="#2563eb">L</text>
+          <text x="90" y="138" font-size="13" font-weight="700" fill="#2563eb">N</text>
+        </svg>
+      `,
+      // Ex 6.2 Q9 / Q10: Trapezium with Diagonals
+      trapezium_diagonals: `
+        <svg class="diagram-svg" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="90,30 250,30 300,170 40,170" fill="#f8fafc" stroke="#0f172a" stroke-width="2.5"/>
+          <text x="78" y="25" font-size="14" font-weight="700">A</text>
+          <text x="258" y="25" font-size="14" font-weight="700">B</text>
+          <text x="308" y="180" font-size="14" font-weight="700">C</text>
+          <text x="26" y="180" font-size="14" font-weight="700">D</text>
+          
+          <line x1="90" y1="30" x2="300" y2="170" stroke="#2563eb" stroke-width="2"/>
+          <line x1="250" y1="30" x2="40" y2="170" stroke="#2563eb" stroke-width="2"/>
+          <circle cx="170" cy="100" r="3.5" fill="#d97706"/>
+          <text x="175" y="95" font-size="13" font-weight="700" fill="#d97706">O</text>
+          
+          <line x1="170" y1="100" x2="65" y2="100" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="3"/>
+          <text x="48" y="104" font-size="13" font-weight="700" fill="#dc2626">E</text>
+        </svg>
+      `,
+      // Ex 6.3 Q2: Intersecting Lines with Angles
+      intersecting_lines: `
+        <svg class="diagram-svg" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
+          <line x1="40" y1="40" x2="300" y2="40" stroke="#0f172a" stroke-width="2"/>
+          <line x1="40" y1="140" x2="300" y2="140" stroke="#0f172a" stroke-width="2"/>
+          <text x="35" y="32" font-size="14" font-weight="700">D</text>
+          <text x="295" y="32" font-size="14" font-weight="700">C</text>
+          <text x="35" y="160" font-size="14" font-weight="700">A</text>
+          <text x="295" y="160" font-size="14" font-weight="700">B</text>
+          
+          <line x1="50" y1="40" x2="290" y2="140" stroke="#2563eb" stroke-width="2"/>
+          <line x1="280" y1="40" x2="60" y2="140" stroke="#2563eb" stroke-width="2"/>
+          <circle cx="170" cy="90" r="3" fill="#d97706"/>
+          <text x="175" y="85" font-size="13" font-weight="700" fill="#d97706">O</text>
+          
+          <text x="80" y="58" font-size="12" font-weight="700" fill="#059669">70&deg;</text>
+          <text x="210" y="88" font-size="12" font-weight="700" fill="#dc2626">125&deg;</text>
+        </svg>
+      `,
+      // Example 4: Bow-Tie Triangles
+      bowtie_triangles: `
+        <svg class="diagram-svg" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+          <line x1="50" y1="30" x2="270" y2="30" stroke="#2563eb" stroke-width="2.5"/>
+          <line x1="50" y1="150" x2="270" y2="150" stroke="#2563eb" stroke-width="2.5"/>
+          <text x="35" y="34" font-size="14" font-weight="700" fill="#2563eb">P</text>
+          <text x="278" y="34" font-size="14" font-weight="700" fill="#2563eb">Q</text>
+          <text x="35" y="156" font-size="14" font-weight="700" fill="#2563eb">S</text>
+          <text x="278" y="156" font-size="14" font-weight="700" fill="#2563eb">R</text>
+          
+          <line x1="50" y1="30" x2="270" y2="150" stroke="#0f172a" stroke-width="2"/>
+          <line x1="270" y1="30" x2="50" y2="150" stroke="#0f172a" stroke-width="2"/>
+          <circle cx="160" cy="90" r="3.5" fill="#d97706"/>
+          <text x="168" y="90" font-size="13" font-weight="700" fill="#d97706">O</text>
+        </svg>
+      `,
+      // Example 5: Triangles with Side Measures
+      example5_sides: `
+        <svg class="diagram-svg" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,140 110,40 150,140" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+          <text x="35" y="148" font-size="13" font-weight="700">A (80&deg;)</text>
+          <text x="105" y="30" font-size="13" font-weight="700">B (60&deg;)</text>
+          <text x="156" y="148" font-size="13" font-weight="700">C</text>
+          <text x="65" y="80" font-size="11" fill="#1e40af">3.8</text>
+          <text x="135" y="80" font-size="11" fill="#1e40af">6</text>
+          <text x="95" y="156" font-size="11" fill="#1e40af">3&radic;3</text>
+          
+          <polygon points="210,140 290,40 330,140" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+          <text x="195" y="148" font-size="13" font-weight="700">R</text>
+          <text x="285" y="30" font-size="13" font-weight="700">Q</text>
+          <text x="336" y="148" font-size="13" font-weight="700">P = ?</text>
+          <text x="235" y="80" font-size="11" fill="#b45309">7.6</text>
+          <text x="315" y="80" font-size="11" fill="#b45309">12</text>
+          <text x="255" y="156" font-size="11" fill="#b45309">6&radic;3</text>
+        </svg>
+      `,
+      // Pole & Shadow Problem
+      shadow_diagram: `
+        <svg class="diagram-svg" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
+          <line x1="20" y1="150" x2="320" y2="150" stroke="#475569" stroke-width="2.5"/>
+          <line x1="60" y1="150" x2="60" y2="60" stroke="#059669" stroke-width="4"/>
+          <line x1="60" y1="60" x2="120" y2="150" stroke="#059669" stroke-width="2" stroke-dasharray="4"/>
+          <text x="45" y="105" font-size="12" font-weight="700" fill="#059669">6 m</text>
+          <text x="80" y="168" font-size="12" font-weight="700" fill="#059669">4 m</text>
+          
+          <line x1="180" y1="150" x2="180" y2="20" stroke="#2563eb" stroke-width="5"/>
+          <line x1="180" y1="20" x2="310" y2="150" stroke="#2563eb" stroke-width="2" stroke-dasharray="4"/>
+          <text x="160" y="80" font-size="13" font-weight="700" fill="#2563eb">h = ?</text>
+          <text x="235" y="168" font-size="12" font-weight="700" fill="#2563eb">28 m</text>
+        </svg>
+      `
+    };
+
+    /* ==========================================================================
+       COMPLETE 15 HIGH-YIELD CURATED QUESTIONS (WITH STEP-BY-STEP MARKING)
+       ========================================================================== */
+    const PROBLEMS_DATA = [
+      // 1. Ex 6.1: Foundations of Geometric Similarity (2 Marks)
+      {
+        id: 1,
+        title: "Similarity Conditions & Properties (Exercise 6.1)",
+        context: "State the fundamental conditions that govern geometric similarity of polygons and standard geometric figures.",
+        marks: 2,
+        steps: [
+          {
+            title: "Step 1: Polygon Similarity Rules",
+            marks: 1,
+            prompt: "Two polygons of the same number of sides are similar if: (a) their corresponding angles are <input class='step-input' style='width:120px;' data-ans='equal'> and (b) their corresponding sides are <input class='step-input' style='width:140px;' data-ans='proportional'>.",
+            explanation: "Two polygons are similar if corresponding angles are <strong>equal</strong> and corresponding sides are <strong>proportional</strong> [1 Mark]."
+          },
+          {
+            title: "Step 2: Equilateral Triangles & Squares Similarity",
+            prompt: "All equilateral triangles and all squares are always <input class='step-input' style='width:120px;' data-ans='similar'>.",
+            explanation: "All equilateral triangles and squares have invariant angle measures (60° and 90°) and equal side ratios, making them always <strong>similar</strong> [1 Mark]."
+          }
+        ]
+      },
+      // 2. Ex 6.1 Q3: Non-Similar Quadrilateral Analysis (2 Marks)
+      {
+        id: 2,
+        title: "Non-Similarity of Rhombus and Square (Exercise 6.1 Q3)",
+        context: "Examine whether rhombus \\( PQRS \\) (side 1.5 cm) and square \\( ABCD \\) (side 3.0 cm) are similar.",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.rhombus_square,
+        steps: [
+          {
+            title: "Step 1: Ratio of Corresponding Sides",
+            marks: 1,
+            prompt: "The ratio of corresponding sides \\( \\frac{PQ}{AB} = \\frac{1.5}{3.0} = \\) <input class='step-input' style='width:70px;' data-ans='1/2' data-alt='0.5'>",
+            explanation: "Ratio of sides \\( \\frac{1.5}{3.0} = \\frac{1}{2} \\) for all 4 pairs of sides [1 Mark]."
+          },
+          {
+            title: "Step 2: Compare Angles and Conclude",
+            prompt: "Since the angles of square \\( ABCD \\) are \\( 90^\\circ \\) but angles of rhombus \\( PQRS \\) are not right angles, are they similar? (yes / no): <input class='step-input' style='width:60px;' data-ans='no'>",
+            explanation: "Corresponding angles are not equal. Hence, the two figures are <strong>not similar</strong> [1 Mark]."
+          }
+        ]
+      },
+      // 3. Ex 6.2 Q1(i): Direct BPT Length Calculation (2 Marks)
+      {
+        id: 3,
+        title: "Finding Unknown Segment EC via BPT (Exercise 6.2 Q1.i)",
+        context: "In \\( \\triangle ABC \\), \\( DE \\parallel BC \\). If \\( AD = 1.5\\text{ cm} \\), \\( DB = 3\\text{ cm} \\), and \\( AE = 1\\text{ cm} \\), calculate \\( EC \\).",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.triangle_de_bc,
+        steps: [
+          {
+            title: "Step 1: Apply Basic Proportionality Theorem",
+            marks: 1,
+            prompt: "By BPT, \\( \\frac{AD}{DB} = \\frac{AE}{EC} \\implies \\frac{1.5}{3} = \\frac{1}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='EC'>",
+            explanation: "\\( \\frac{AD}{DB} = \\frac{AE}{EC} \\implies \\frac{1.5}{3} = \\frac{1}{EC} \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Solve for EC",
+            marks: 1,
+            prompt: "\\( \\frac{1}{2} = \\frac{1}{EC} \\implies EC = \\) <input class='step-input' style='width:70px;' data-ans='2' data-alt='2 cm'> cm",
+            explanation: "\\( EC = \\frac{3 \\times 1}{1.5} = 2\\text{ cm} \\) [1 Mark]."
+          }
+        ]
+      },
+      // 4. Ex 6.2 Q1(ii): Finding Upper Segment AD via BPT (2 Marks)
+      {
+        id: 4,
+        title: "Finding Segment AD via BPT (Exercise 6.2 Q1.ii)",
+        context: "In \\( \\triangle ABC \\), \\( DE \\parallel BC \\). Given \\( DB = 7.2\\text{ cm} \\), \\( AE = 1.8\\text{ cm} \\), and \\( EC = 5.4\\text{ cm} \\). Calculate \\( AD \\).",
+        marks: 2,
+        steps: [
+          {
+            title: "Step 1: Set up BPT Equation",
+            marks: 1,
+            prompt: "\\( \\frac{AD}{7.2} = \\frac{1.8}{5.4} \\implies \\frac{AD}{7.2} = \\frac{1}{\\text{blank}} \\) where blank is <input class='step-input' style='width:50px;' data-ans='3'>",
+            explanation: "\\( \\frac{1.8}{5.4} = \\frac{1}{3} \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Compute AD",
+            marks: 1,
+            prompt: "\\( AD = \\frac{7.2}{3} = \\) <input class='step-input' style='width:70px;' data-ans='2.4' data-alt='2.4 cm'> cm",
+            explanation: "\\( AD = 2.4\\text{ cm} \\) [1 Mark]."
+          }
+        ]
+      },
+      // 5. Ex 6.2 Q2: Testing Parallel Lines via Converse of BPT (2 Marks)
+      {
+        id: 5,
+        title: "Testing Parallel Line via Converse of BPT (Exercise 6.2 Q2)",
+        context: "In \\( \\triangle PQR \\), points \\( E \\) and \\( F \\) lie on \\( PQ \\) and \\( PR \\) respectively. Given \\( PE = 3.9\\text{ cm} \\), \\( EQ = 3\\text{ cm} \\), \\( PF = 3.6\\text{ cm} \\), and \\( FR = 2.4\\text{ cm} \\).",
+        marks: 2,
+        steps: [
+          {
+            title: "Step 1: Compute Segment Ratios",
+            marks: 1,
+            prompt: "\\( \\frac{PE}{EQ} = \\frac{3.9}{3} = \\) <input class='step-input' style='width:70px;' data-ans='1.3' data-alt='13/10'> and \\( \\frac{PF}{FR} = \\frac{3.6}{2.4} = \\) <input class='step-input' style='width:70px;' data-ans='1.5' data-alt='3/2'>",
+            explanation: "\\( \\frac{PE}{EQ} = 1.3 \\) and \\( \\frac{PF}{FR} = 1.5 \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Evaluate using Converse of BPT",
+            marks: 1,
+            prompt: "Since \\( \\frac{PE}{EQ} \\neq \\frac{PF}{FR} \\), is \\( EF \\parallel QR \\)? (yes / no): <input class='step-input' style='width:60px;' data-ans='no'>",
+            explanation: "Because ratios are not equal (\\( 1.3 \\neq 1.5 \\)), \\( EF \\) is <strong>not parallel</strong> to \\( QR \\) [1 Mark]."
+          }
+        ]
+      },
+      // 6. Ex 6.2 Q3: Proving AM/AB = AN/AD (3 Marks)
+      {
+        id: 6,
+        title: "Proving AM/AB = AN/AD (Exercise 6.2 Q3)",
+        context: "In the quadrilateral figure, \\( LM \\parallel CB \\) and \\( LN \\parallel CD \\). Prove that \\( \\frac{AM}{AB} = \\frac{AN}{AD} \\).",
+        marks: 3,
+        diagramSVG: DIAGRAM_PRESETS.quad_lm_ln,
+        steps: [
+          {
+            title: "Step 1: Apply BPT in Triangle ABC",
+            marks: 1,
+            prompt: "In \\( \\triangle ABC \\), since \\( LM \\parallel CB \\), by BPT corollary: \\( \\frac{AM}{AB} = \\frac{AL}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='AC'> ...(1)",
+            explanation: "By BPT Corollary in \\( \\triangle ABC \\), \\( \\frac{AM}{AB} = \\frac{AL}{AC} \\) ...(1) [1 Mark]."
+          },
+          {
+            title: "Step 2: Apply BPT in Triangle ADC",
+            marks: 1,
+            prompt: "In \\( \\triangle ADC \\), since \\( LN \\parallel CD \\): \\( \\frac{AN}{AD} = \\frac{AL}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='AC'> ...(2)",
+            explanation: "By BPT Corollary in \\( \\triangle ADC \\), \\( \\frac{AN}{AD} = \\frac{AL}{AC} \\) ...(2) [1 Mark]."
+          },
+          {
+            title: "Step 3: Equate Equations (1) and (2)",
+            marks: 1,
+            prompt: "Comparing (1) and (2) directly yields \\( \\frac{AM}{AB} = \\) <input class='step-input' style='width:90px;' data-ans='AN/AD'>",
+            explanation: "Both expressions equal \\( \\frac{AL}{AC} \\), hence \\( \\frac{AM}{AB} = \\frac{AN}{AD} \\) [1 Mark]."
+          }
+        ]
+      },
+      // 7. Ex 6.2 Q4: Proving BF/FE = BE/EC (3 Marks)
+      {
+        id: 7,
+        title: "Nested Parallel Lines Ratio (Exercise 6.2 Q4)",
+        context: "In \\( \\triangle ABC \\), \\( DE \\parallel AC \\) and \\( DF \\parallel AE \\). Prove that \\( \\frac{BF}{FE} = \\frac{BE}{EC} \\).",
+        marks: 3,
+        steps: [
+          {
+            title: "Step 1: Apply BPT in Triangle BAE",
+            marks: 1,
+            prompt: "In \\( \\triangle BAE \\), since \\( DF \\parallel AE \\): \\( \\frac{BF}{FE} = \\frac{BD}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='DA' data-alt='AD'> ...(1)",
+            explanation: "By BPT in \\( \\triangle BAE \\), \\( \\frac{BF}{FE} = \\frac{BD}{DA} \\) ...(1) [1 Mark]."
+          },
+          {
+            title: "Step 2: Apply BPT in Triangle BAC",
+            marks: 1,
+            prompt: "In \\( \\triangle BAC \\), since \\( DE \\parallel AC \\): \\( \\frac{BE}{EC} = \\frac{BD}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='DA' data-alt='AD'> ...(2)",
+            explanation: "By BPT in \\( \\triangle BAC \\), \\( \\frac{BE}{EC} = \\frac{BD}{DA} \\) ...(2) [1 Mark]."
+          },
+          {
+            title: "Step 3: Conclude Proof",
+            marks: 1,
+            prompt: "Comparing (1) and (2) proves \\( \\frac{BF}{FE} = \\) <input class='step-input' style='width:90px;' data-ans='BE/EC'>",
+            explanation: "Equating (1) and (2) yields \\( \\frac{BF}{FE} = \\frac{BE}{EC} \\) [1 Mark]."
+          }
+        ]
+      },
+      // 8. Ex 6.2 Q9: Trapezium Diagonals Ratio Proof (3 Marks)
+      {
+        id: 8,
+        title: "Trapezium Diagonals Proportionality (Exercise 6.2 Q9)",
+        context: "\\( ABCD \\) is a trapezium with \\( AB \\parallel DC \\) and diagonals intersecting at \\( O \\). Prove that \\( \\frac{AO}{BO} = \\frac{CO}{DO} \\).",
+        marks: 3,
+        diagramSVG: DIAGRAM_PRESETS.trapezium_diagonals,
+        steps: [
+          {
+            title: "Step 1: Construction & Triangle DAB Ratio",
+            marks: 1,
+            prompt: "Draw line \\( OE \\parallel AB \\parallel DC \\) meeting \\( AD \\) at \\( E \\). In \\( \\triangle DAB \\), \\( \\frac{DE}{EA} = \\frac{DO}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='OB' data-alt='BO'> ...(1)",
+            explanation: "By BPT in \\( \\triangle DAB \\), \\( \\frac{DE}{EA} = \\frac{DO}{OB} \\) ...(1) [1 Mark]."
+          },
+          {
+            title: "Step 2: Triangle ADC Ratio",
+            marks: 1,
+            prompt: "In \\( \\triangle ADC \\), \\( \\frac{AE}{ED} = \\frac{AO}{OC} \\implies \\frac{DE}{EA} = \\frac{CO}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='AO'> ...(2)",
+            explanation: "Taking reciprocals gives \\( \\frac{DE}{EA} = \\frac{CO}{AO} \\) ...(2) [1 Mark]."
+          },
+          {
+            title: "Step 3: Equate & Rearrange",
+            marks: 1,
+            prompt: "From (1) and (2), \\( \\frac{DO}{OB} = \\frac{CO}{AO} \\implies \\frac{AO}{BO} = \\) <input class='step-input' style='width:90px;' data-ans='CO/DO'>",
+            explanation: "Cross-multiplying gives \\( \\frac{AO}{BO} = \\frac{CO}{DO} \\) [1 Mark]."
+          }
+        ]
+      },
+      // 9. Ex 6.2 Q10: Proving Quadrilateral is a Trapezium (3 Marks)
+      {
+        id: 9,
+        title: "Proving Quadrilateral is a Trapezium (Exercise 6.2 Q10)",
+        context: "The diagonals of quadrilateral \\( ABCD \\) intersect at \\( O \\) such that \\( \\frac{AO}{BO} = \\frac{CO}{DO} \\). Show that \\( ABCD \\) is a trapezium.",
+        marks: 3,
+        diagramSVG: DIAGRAM_PRESETS.trapezium_diagonals,
+        steps: [
+          {
+            title: "Step 1: Construction and Initial Ratio",
+            marks: 1,
+            prompt: "Given \\( \\frac{AO}{CO} = \\frac{BO}{DO} \\). Draw \\( OE \\parallel AB \\) meeting \\( AD \\) at \\( E \\). In \\( \\triangle DAB \\), \\( \\frac{AE}{ED} = \\frac{BO}{\\text{blank}} \\) where blank is <input class='step-input' style='width:60px;' data-ans='DO' data-alt='OD'> ...(1)",
+            explanation: "By BPT in \\( \\triangle DAB \\), \\( \\frac{AE}{ED} = \\frac{BO}{DO} \\) ...(1) [1 Mark]."
+          },
+          {
+            title: "Step 2: Apply Converse of BPT in Triangle ADC",
+            marks: 1,
+            prompt: "Substituting given ratio gives \\( \\frac{AE}{ED} = \\frac{AO}{CO} \\). In \\( \\triangle ADC \\), this implies line \\( OE \\parallel \\) <input class='step-input' style='width:60px;' data-ans='DC' data-alt='CD'>.",
+            explanation: "By Converse of BPT in \\( \\triangle ADC \\), \\( OE \\parallel DC \\) [1 Mark]."
+          },
+          {
+            title: "Step 3: Conclude Parallel Sides",
+            marks: 1,
+            prompt: "Since \\( OE \\parallel AB \\) and \\( OE \\parallel DC \\), we have \\( AB \\parallel \\) <input class='step-input' style='width:60px;' data-ans='DC' data-alt='CD'>, proving \\( ABCD \\) is a trapezium.",
+            explanation: "Since opposite sides \\( AB \\parallel DC \\), quadrilateral \\( ABCD \\) is a <strong>trapezium</strong> [1 Mark]."
+          }
+        ]
+      },
+      // 10. Ex 6.3 Q2: Angle Calculations in Similar Triangles (2 Marks)
+      {
+        id: 10,
+        title: "Angle Calculations in Similar Triangles (Exercise 6.3 Q2)",
+        context: "In the figure, \\( \\triangle ODC \\sim \\triangle OBA \\), \\( \\angle BOC = 125^\\circ \\), and \\( \\angle CDO = 70^\\circ \\).",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.intersecting_lines,
+        steps: [
+          {
+            title: "Step 1: Find Angle DOC & Angle DCO",
+            marks: 1,
+            prompt: "\\( \\angle DOC = 180^\\circ - 125^\\circ = \\) <input class='step-input' style='width:60px;' data-ans='55' data-alt='55°'>\\( ^\\circ \\) and \\( \\angle DCO = 180^\\circ - (70^\\circ + 55^\\circ) = \\) <input class='step-input' style='width:60px;' data-ans='55' data-alt='55°'>\\( ^\\circ \\)",
+            explanation: "\\( \\angle DOC = 55^\\circ \\) and \\( \\angle DCO = 55^\\circ \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Find Angle OAB using Similarity",
+            marks: 1,
+            prompt: "Since \\( \\triangle ODC \\sim \\triangle OBA \\), \\( \\angle OAB = \\angle DCO = \\) <input class='step-input' style='width:60px;' data-ans='55' data-alt='55°'>\\( ^\\circ \\)",
+            explanation: "Corresponding angles of similar triangles are equal: \\( \\angle OAB = 55^\\circ \\) [1 Mark]."
+          }
+        ]
+      },
+      // 11. Ex 6.3 Example 4: Bow-Tie Triangles (2 Marks)
+      {
+        id: 11,
+        title: "Similarity in Bow-Tie Figure (Example 4)",
+        context: "In the figure, \\( PQ \\parallel RS \\). Prove that \\( \\triangle POQ \\sim \\triangle SOR \\).",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.bowtie_triangles,
+        steps: [
+          {
+            title: "Step 1: Identify Equal Angle Pairs",
+            marks: 1,
+            prompt: "Alternate interior angles: \\( \\angle P = \\angle \\) <input class='step-input' style='width:50px;' data-ans='S'> and \\( \\angle Q = \\angle \\) <input class='step-input' style='width:50px;' data-ans='R'>",
+            explanation: "\\( \\angle P = \\angle S \\) and \\( \\angle Q = \\angle R \\) (alternate interior angles) [1 Mark]."
+          },
+          {
+            title: "Step 2: State Criterion",
+            marks: 1,
+            prompt: "Therefore, \\( \\triangle POQ \\sim \\triangle SOR \\) by <input class='step-input' style='width:70px;' data-ans='AA' data-alt='AAA'> similarity criterion.",
+            explanation: "By AA (or AAA) similarity criterion, \\( \\triangle POQ \\sim \\triangle SOR \\) [1 Mark]."
+          }
+        ]
+      },
+      // 12. Ex 6.3 Example 5: Finding Unknown Angle via SSS (2 Marks)
+      {
+        id: 12,
+        title: "Finding Angle via SSS Similarity (Example 5)",
+        context: "In \\( \\triangle ABC \\) and \\( \\triangle PQR \\), sides are given as in the figure with \\( \\angle A = 80^\\circ \\) and \\( \\angle B = 60^\\circ \\). Find \\( \\angle P \\).",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.example5_sides,
+        steps: [
+          {
+            title: "Step 1: Calculate Ratio of Sides and Similarity",
+            marks: 1,
+            prompt: "\\( \\frac{AB}{RQ} = \\frac{3.8}{7.6} = \\frac{1}{2} \\), \\( \\frac{BC}{QP} = \\frac{6}{12} = \\frac{1}{2} \\), \\( \\frac{AC}{PR} = \\frac{3\\sqrt{3}}{6\\sqrt{3}} = \\frac{1}{2} \\).<br>Therefore, \\( \\triangle ABC \\sim \\triangle \\) <input class='step-input' style='width:80px;' data-ans='RQP'> by SSS.",
+            explanation: "\\( \\triangle ABC \\sim \\triangle RQP \\) by SSS similarity criterion [1 Mark]."
+          },
+          {
+            title: "Step 2: Find Angle P",
+            marks: 1,
+            prompt: "\\( \\angle C = 180^\\circ - (80^\\circ + 60^\\circ) = 40^\\circ \\). Since \\( \\angle P = \\angle C \\), \\( \\angle P = \\) <input class='step-input' style='width:60px;' data-ans='40' data-alt='40°'>\\( ^\\circ \\)",
+            explanation: "\\( \\angle P = 40^\\circ \\) [1 Mark]."
+          }
+        ]
+      },
+      // 13. Ex 6.3 Q4: SAS Similarity (2 Marks)
+      {
+        id: 13,
+        title: "Proving Triangle PQS ~ Triangle TQR (Exercise 6.3 Q4)",
+        context: "In the figure, \\( \\frac{QR}{QS} = \\frac{QT}{PR} \\) and \\( \\angle 1 = \\angle 2 \\). Show that \\( \\triangle PQS \\sim \\triangle TQR \\).",
+        marks: 2,
+        steps: [
+          {
+            title: "Step 1: Use Isosceles Property in Triangle PQR",
+            marks: 1,
+            prompt: "Since \\( \\angle 1 = \\angle 2 \\), side \\( PR = \\) <input class='step-input' style='width:60px;' data-ans='PQ' data-alt='QP'>",
+            explanation: "Sides opposite to equal angles are equal: \\( PR = PQ \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Substitute into Given Ratio and Apply SAS",
+            marks: 1,
+            prompt: "\\( \\frac{QR}{QS} = \\frac{QT}{PQ} \\implies \\frac{PQ}{QT} = \\frac{QS}{QR} \\). Along with common \\( \\angle Q = \\angle Q \\), \\( \\triangle PQS \\sim \\triangle TQR \\) by <input class='step-input' style='width:70px;' data-ans='SAS'> similarity.",
+            explanation: "By SAS similarity criterion, \\( \\triangle PQS \\sim \\triangle TQR \\) [1 Mark]."
+          }
+        ]
+      },
+      // 14. Ex 6.3 Q13: Proving CA² = CB · CD (3 Marks)
+      {
+        id: 14,
+        title: "Proving CA² = CB · CD (Exercise 6.3 Q13)",
+        context: "\\( D \\) is a point on side \\( BC \\) of \\( \\triangle ABC \\) such that \\( \\angle ADC = \\angle BAC \\). Show that \\( CA^2 = CB \\cdot CD \\).",
+        marks: 3,
+        steps: [
+          {
+            title: "Step 1: Prove Triangle ABC ~ Triangle DAC",
+            marks: 1.5,
+            prompt: "In \\( \\triangle ABC \\) and \\( \\triangle DAC \\), \\( \\angle BAC = \\angle ADC \\) and common angle is \\( \\angle \\) <input class='step-input' style='width:50px;' data-ans='C'>. Thus \\( \\triangle ABC \\sim \\triangle DAC \\) by <input class='step-input' style='width:60px;' data-ans='AA'> criterion.",
+            explanation: "By AA criterion, \\( \\triangle ABC \\sim \\triangle DAC \\) [1.5 Marks]."
+          },
+          {
+            title: "Step 2: Form Side Ratios and Cross Multiply",
+            marks: 1.5,
+            prompt: "\\( \\frac{CA}{CD} = \\frac{CB}{CA} \\implies CA \\times CA = \\) <input class='step-input' data-ans='CB*CD' data-alt='CB.CD'>",
+            explanation: "\\( \\frac{CA}{CD} = \\frac{CB}{CA} \\implies CA^2 = CB \\cdot CD \\) [1.5 Marks]."
+          }
+        ]
+      },
+      // 15. Ex 6.3 Q15: Pole and Tower Shadow Height Problem (2 Marks)
+      {
+        id: 15,
+        title: "Tower Height from Sun Shadow (Exercise 6.3 Q15)",
+        context: "A vertical pole of length 6 m casts a shadow 4 m long on the ground, and at the same time a tower casts a shadow 28 m long. Find the height of the tower.",
+        marks: 2,
+        diagramSVG: DIAGRAM_PRESETS.shadow_diagram,
+        steps: [
+          {
+            title: "Step 1: Set up Similarity Proportion",
+            marks: 1,
+            prompt: "\\( \\frac{\\text{Height of Tower}}{\\text{Height of Pole}} = \\frac{\\text{Shadow of Tower}}{\\text{Shadow of Pole}} \\implies \\frac{h}{6} = \\frac{28}{\\text{blank}} \\) where blank is <input class='step-input' style='width:50px;' data-ans='4'>",
+            explanation: "\\( \\frac{h}{6} = \\frac{28}{4} \\) [1 Mark]."
+          },
+          {
+            title: "Step 2: Solve for Height h",
+            marks: 1,
+            prompt: "\\( \\frac{h}{6} = 7 \\implies h = 7 \\times 6 = \\) <input class='step-input' style='width:70px;' data-ans='42' data-alt='42 m'> m",
+            explanation: "\\( h = 42\\text{ m} \\) [1 Mark]."
+          }
+        ]
+      }
+    ];
+
+    /* ==========================================================================
+       SYNTHESIZED AUDIO ENGINE (WEB AUDIO API - ZERO EXTERNAL ASSETS)
+       ========================================================================== */
+    let audioCtx = null;
+    let soundEnabled = true;
+
+    function getAudioContext() {
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+
+    function playSound(type) {
+      if (!soundEnabled) return;
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        if (type === 'correct') {
+          osc.type = 'sine'; osc.frequency.setValueAtTime(880, now); gain.gain.setValueAtTime(0.2, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.4);
+        } else if (type === 'incorrect') {
+          osc.type = 'sawtooth'; osc.frequency.setValueAtTime(140, now); gain.gain.setValueAtTime(0.25, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+        } else {
+          osc.type = 'sine'; osc.frequency.setValueAtTime(440, now); osc.frequency.exponentialRampToValueAtTime(680, now + 0.1); gain.gain.setValueAtTime(0.12, now); gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+        }
+        osc.connect(gain); gain.connect(ctx.destination); osc.start(now); osc.stop(now + 0.4);
+      } catch (e) {}
+    }
+
+    /* ==========================================================================
+       STATE & LOCALSTORAGE PERSISTENCE
+       ========================================================================== */
+    const STORAGE_KEY = "bma_cbse10_triangles_mixed_test";
+    let activeInputElement = null;
+
+    let state = {
+      currentEmail: null,
+      notesRead: true,
+      currentProblemIdx: 0,
+      isCompleted: false,
+      problems: {}
+    };
+
+    function saveState() {
+      if (!state.currentEmail) return;
+      localStorage.setItem(`${STORAGE_KEY}_${state.currentEmail.trim().toLowerCase()}`, JSON.stringify(state));
+      localStorage.setItem(`${STORAGE_KEY}_last_active`, state.currentEmail);
+    }
+
+    function loadState(email) {
+      const data = localStorage.getItem(`${STORAGE_KEY}_${email.trim().toLowerCase()}`);
+      if (data) {
+        try { state = { ...state, ...JSON.parse(data), currentEmail: email }; } catch(e) {}
+      } else {
+        state = { currentEmail: email, notesRead: true, currentProblemIdx: 0, isCompleted: false, problems: {} };
+      }
+    }
+
+    function getProblemState(idx) {
+      if (!state.problems[idx]) {
+        state.problems[idx] = { completedSteps: [], inputs: {}, isSolved: false, isSkipped: false };
+      }
+      return state.problems[idx];
+    }
+
+    function cleanString(s) {
+      return (s || "").toString().trim().toLowerCase().replace(/\s+/g, '').replace(/−/g, '-').replace(/°/g, '');
+    }
+
+    function testInputMatching(userStr, targetStr, altStr) {
+      const u = cleanString(userStr);
+      const t = cleanString(targetStr);
+      const a = cleanString(altStr);
+      if (u === t || (altStr && u === a)) return true;
+      if (u.includes('/') || t.includes('/')) {
+        const d = (f) => f.split('/').length === 2 ? parseFloat(f.split('/')[0]) / parseFloat(f.split('/')[1]) : parseFloat(f);
+        return Math.abs(d(u) - d(t)) < 0.01;
+      }
+      return false;
+    }
+
+    function triggerMathTypeset() {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise().catch((err) => console.warn('MathJax error:', err));
+      }
+    }
+
+    /* ==========================================================================
+       VIRTUAL KEYBOARD & BUILT-IN CALCULATOR HELPERS
+       ========================================================================== */
+    window.trackActiveField = function(element) { activeInputElement = element; };
+    window.insertSymbol = function(sym) {
+      if (!activeInputElement) return;
+      const start = activeInputElement.selectionStart || 0;
+      const end = activeInputElement.selectionEnd || 0;
+      const val = activeInputElement.value;
+      activeInputElement.value = val.substring(0, start) + sym + val.substring(end);
+      activeInputElement.focus();
+      activeInputElement.dispatchEvent(new Event('input', { bubbles: true }));
+    };
+    window.clearActiveField = function() {
+      if (!activeInputElement) return;
+      activeInputElement.value = '';
+      activeInputElement.dispatchEvent(new Event('input', { bubbles: true }));
+      activeInputElement.focus();
+    };
+
+    window.switchToolTab = function(tab) {
+      document.getElementById('tabPadBtn').classList.toggle('active', tab === 'pad');
+      document.getElementById('tabCalcBtn').classList.toggle('active', tab === 'calc');
+      document.getElementById('mathPadView').style.display = tab === 'pad' ? 'block' : 'none';
+      document.getElementById('calcView').style.display = tab === 'calc' ? 'block' : 'none';
+    };
+
+    let calcExpression = "";
+    window.calcAppend = function(val) {
+      calcExpression += val;
+      document.getElementById('calcScreen').textContent = calcExpression || "0";
+    };
+    window.calcClear = function() {
+      calcExpression = "";
+      document.getElementById('calcScreen').textContent = "0";
+    };
+    window.calcSqrt = function() {
+      try {
+        const res = Math.sqrt(eval(calcExpression || "0"));
+        calcExpression = String(res);
+        document.getElementById('calcScreen').textContent = calcExpression;
+      } catch(e) { document.getElementById('calcScreen').textContent = "Error"; }
+    };
+    window.calcEval = function() {
+      try {
+        const res = eval(calcExpression || "0");
+        calcExpression = String(res);
+        document.getElementById('calcScreen').textContent = calcExpression;
+      } catch(e) { document.getElementById('calcScreen').textContent = "Error"; }
+    };
+    window.calcInsertToField = function() {
+      if (!activeInputElement || !calcExpression) return;
+      insertSymbol(calcExpression);
+    };
+
+    /* ==========================================================================
+       ROUTER & VIEW SWITCHING CONTROLS
+       ========================================================================== */
+    const loginForm = document.getElementById('loginForm');
+    const studentEmailInput = document.getElementById('studentEmail');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = studentEmailInput.value.trim();
+      if (!email) return;
+      loadState(email);
+      if (state.isCompleted) {
+        renderReviewScreen();
+        showView('review');
+      } else {
+        renderProblem(state.currentProblemIdx);
+        showView('sheet');
+      }
+    });
+
+    document.getElementById('switchUserBtn').addEventListener('click', () => {
+      saveState();
+      state.currentEmail = null;
+      showView('login');
+    });
+
+    document.getElementById('soundToggleBtn').addEventListener('click', () => {
+      soundEnabled = !soundEnabled;
+      document.getElementById('soundIcon').textContent = soundEnabled ? '🔊' : '🔇';
+    });
+
+    function showView(v) {
+      document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+      document.getElementById(`${v}View`).classList.add('active');
+      document.getElementById('headerActions').style.display = state.currentEmail ? 'flex' : 'none';
+      if (state.currentEmail) document.getElementById('userEmailSpan').textContent = state.currentEmail;
+    }
+
+    /* ==========================================================================
+       PROGRESSIVE STEP-BY-STEP RENDERER (Next Step Unlocks After Previous Correct)
+       ========================================================================== */
+    function renderProblem(idx) {
+      if (idx < 0 || idx >= PROBLEMS_DATA.length) return;
+      state.currentProblemIdx = idx;
+      const prob = PROBLEMS_DATA[idx];
+      const pState = getProblemState(idx);
+
+      document.getElementById('pNumberDisplay').textContent = `Question ${idx + 1} of ${PROBLEMS_DATA.length}: ${prob.title}`;
+      document.getElementById('questionMarksDisplay').textContent = `Total: ${prob.marks} Marks`;
+      document.getElementById('pContextDisplay').innerHTML = prob.context;
+
+      // Handle geometric diagram SVG
+      const diagramBox = document.getElementById('diagramDisplayContainer');
+      if (prob.diagramSVG) {
+        diagramBox.style.display = 'flex';
+        diagramBox.innerHTML = prob.diagramSVG;
+      } else {
+        diagramBox.style.display = 'none';
+        diagramBox.innerHTML = '';
+      }
+
+      const badge = document.getElementById('pStatusBadge');
+      if (pState.isSolved) { badge.className = 'status-badge badge-complete'; badge.textContent = 'Completed'; }
+      else if (pState.isSkipped) { badge.className = 'status-badge badge-skipped'; badge.textContent = 'Skipped'; }
+      else if (pState.completedSteps.length > 0) { badge.className = 'status-badge badge-progress'; badge.textContent = 'In Progress'; }
+      else { badge.className = 'status-badge badge-unvisited'; badge.textContent = 'Unvisited'; }
+
+      const container = document.getElementById('stepsListContainer');
+      container.innerHTML = '';
+
+      // Reveal only completed steps plus the current active step
+      const completedCount = pState.completedSteps.length;
+      const maxStepToRender = pState.isSolved ? prob.steps.length - 1 : Math.min(completedCount, prob.steps.length - 1);
+
+      for (let sIdx = 0; sIdx <= maxStepToRender; sIdx++) {
+        const step = prob.steps[sIdx];
+        const isDone = pState.completedSteps.includes(sIdx);
+        const isActive = !isDone;
+
+        const card = document.createElement('div');
+        card.id = `step-card-${idx}-${sIdx}`;
+        card.className = `step-card ${isDone ? 'completed' : 'active'}`;
+
+        card.innerHTML = `
+          <div class="step-header-bar">
+            <div class="step-title-text">${step.title}</div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="step-marks-tag">[${step.marks} Mark${step.marks > 1 ? 's' : ''}]</span>
+              <span class="step-status-indicator">${isDone ? '✓ Completed' : 'Active Step'}</span>
+            </div>
+          </div>
+          <div class="step-prompt">${step.prompt}</div>
+          <div class="step-controls">
+            <div>
+              ${sIdx > 0 ? `<button class="btn btn-step-back" onclick="focusStepCard(${idx}, ${sIdx-1})">← Back to Step ${sIdx}</button>` : ''}
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="step-feedback-msg" id="step-msg-${idx}-${sIdx}"></span>
+              ${!isDone ? `
+                <button class="btn btn-step-check" id="btn-verify-${idx}-${sIdx}" onclick="verifyStepAnswers(${idx}, ${sIdx})">
+                  ${sIdx === prob.steps.length - 1 ? 'Verify & Finish Question ✓' : 'Verify & Reveal Next Step →'}
+                </button>
+              ` : '<span style="color:var(--correct-green); font-weight:700;">✓ Step Verified</span>'}
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+
+        card.querySelectorAll('.step-input').forEach((inp, iIdx) => {
+          const inputKey = `p${idx}_s${sIdx}_i${iIdx}`;
+          inp.setAttribute('onfocus', 'trackActiveField(this)');
+          if (pState.inputs[inputKey] !== undefined) inp.value = pState.inputs[inputKey];
+          if (isDone) {
+            inp.disabled = true;
+            inp.classList.add('input-correct');
+          } else {
+            inp.disabled = false;
+            inp.addEventListener('input', (e) => {
+              pState.inputs[inputKey] = e.target.value;
+              saveState();
+            });
+            inp.addEventListener('keypress', (e) => {
+              if (e.key === 'Enter') verifyStepAnswers(idx, sIdx);
+            });
+          }
+        });
+      }
+
+      document.getElementById('prevProblemBtn').disabled = idx === 0;
+      document.getElementById('nextProblemBtn').disabled = idx === PROBLEMS_DATA.length - 1;
+      renderPaletteGrid();
+      saveState();
+      triggerMathTypeset();
+    }
+
+    window.verifyStepAnswers = function(pIdx, sIdx) {
+      const prob = PROBLEMS_DATA[pIdx];
+      const pState = getProblemState(pIdx);
+      const card = document.getElementById(`step-card-${pIdx}-${sIdx}`);
+      const inputs = card.querySelectorAll('.step-input');
+      let ok = true;
+
+      inputs.forEach((inp, iIdx) => {
+        const ans = inp.getAttribute('data-ans') || '';
+        const alt = inp.getAttribute('data-alt') || '';
+        const inputKey = `p${pIdx}_s${sIdx}_i${iIdx}`;
+        pState.inputs[inputKey] = inp.value;
+        if (testInputMatching(inp.value, ans, alt)) {
+          inp.classList.remove('input-incorrect');
+          inp.classList.add('input-correct');
+        } else {
+          inp.classList.remove('input-correct');
+          inp.classList.add('input-incorrect');
+          ok = false;
+        }
+      });
+
+      const msg = document.getElementById(`step-msg-${pIdx}-${sIdx}`);
+      if (ok) {
+        playSound('correct');
+        if (!pState.completedSteps.includes(sIdx)) pState.completedSteps.push(sIdx);
+        pState.isSkipped = false;
+        msg.className = "step-feedback-msg correct";
+        msg.textContent = "✓ Correct Step Verification!";
+
+        if (pState.completedSteps.length === prob.steps.length) {
+          pState.isSolved = true;
+          saveState();
+          setTimeout(() => renderProblem(pIdx), 400);
+        } else {
+          saveState();
+          setTimeout(() => {
+            renderProblem(pIdx);
+            focusStepCard(pIdx, sIdx + 1);
+          }, 350);
+        }
+      } else {
+        playSound('incorrect');
+        msg.className = "step-feedback-msg incorrect";
+        msg.textContent = "✗ Verification mismatch in red box.";
+      }
+    };
+
+    window.focusStepCard = function(pIdx, sIdx) {
+      const target = document.getElementById(`step-card-${pIdx}-${sIdx}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const field = target.querySelector('.step-input');
+        if (field && !field.disabled) field.focus();
+      }
+    };
+
+    document.getElementById('skipProblemBtn').addEventListener('click', () => {
+      playSound('skip');
+      const pState = getProblemState(state.currentProblemIdx);
+      pState.isSkipped = true;
+      saveState();
+      if (state.currentProblemIdx < PROBLEMS_DATA.length - 1) renderProblem(state.currentProblemIdx + 1);
+      else renderProblem(state.currentProblemIdx);
+    });
+
+    document.getElementById('prevProblemBtn').addEventListener('click', () => {
+      if (state.currentProblemIdx > 0) renderProblem(state.currentProblemIdx - 1);
+    });
+
+    document.getElementById('nextProblemBtn').addEventListener('click', () => {
+      if (state.currentProblemIdx < PROBLEMS_DATA.length - 1) renderProblem(state.currentProblemIdx + 1);
+    });
+
+    function renderPaletteGrid() {
+      const grid = document.getElementById('paletteGridContainer');
+      grid.innerHTML = '';
+      let done = 0;
+
+      PROBLEMS_DATA.forEach((p, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'palette-btn';
+        btn.textContent = idx + 1;
+        const ps = state.problems[idx];
+        if (ps) {
+          if (ps.isSolved) { btn.classList.add('completed'); done++; }
+          else if (ps.isSkipped) btn.classList.add('skipped');
+          else if (ps.completedSteps.length > 0) btn.classList.add('progress');
+        }
+        if (idx === state.currentProblemIdx) btn.classList.add('active');
+        btn.addEventListener('click', () => renderProblem(idx));
+        grid.appendChild(btn);
+      });
+      document.getElementById('completionRateText').textContent = `${done}/${PROBLEMS_DATA.length} Solved`;
+    }
+
+    const confirmModal = document.getElementById('confirmModal');
+    document.getElementById('finishAssessmentBtn').addEventListener('click', () => confirmModal.classList.add('active'));
+    document.getElementById('cancelModalBtn').addEventListener('click', () => confirmModal.classList.remove('active'));
+    document.getElementById('confirmSubmitModalBtn').addEventListener('click', () => {
+      confirmModal.classList.remove('active');
+      state.isCompleted = true;
+      saveState();
+      renderReviewScreen();
+      showView('review');
+    });
+
+    function renderReviewScreen() {
+      let solved = 0, skipped = 0;
+      let earnedMarks = 0;
+      let totalTestMarks = 0;
+
+      PROBLEMS_DATA.forEach((p, idx) => {
+        totalTestMarks += p.marks;
+        const ps = state.problems[idx];
+        if (ps && ps.isSolved) {
+          solved++;
+          earnedMarks += p.marks;
+        } else if (ps && ps.isSkipped) {
+          skipped++;
+        }
+      });
+
+      const pct = Math.round((earnedMarks / totalTestMarks) * 100);
+
+      document.getElementById('finalScoreVal').textContent = `${earnedMarks}`;
+      document.getElementById('finalMarksOutOf').textContent = `out of ${totalTestMarks} Marks (${solved}/15 Solved)`;
+      document.getElementById('accuracyStat').textContent = `${pct}%`;
+      document.getElementById('correctCountStat').textContent = solved;
+      document.getElementById('skippedCountStat').textContent = skipped;
+
+      const desc = document.getElementById('performanceFeedbackDesc');
+      if (pct >= 80) {
+        desc.textContent = "🌟 Outstanding Performance! You demonstrated excellent conceptual mastery across all similarity criteria, BPT proofs, and geometric applications.";
+      } else if (pct >= 50) {
+        desc.textContent = "👍 Solid Performance! You have a good grasp of the core concepts. Review the step-by-step marking rationales below to polish tricky proof deductions.";
+      } else {
+        desc.textContent = "📚 Further Practice Recommended. Review the detailed solutions below to reinforce the step-by-step methods and proportional equations.";
+      }
+
+      const reviewContainer = document.getElementById('reviewListContainer');
+      reviewContainer.innerHTML = '';
+      PROBLEMS_DATA.forEach((prob, idx) => {
+        const card = document.createElement('div');
+        card.className = 'review-card';
+        let stepsHTML = prob.steps.map(st => `
+          <div style="margin-top:10px; padding:12px; background:#f8fafc; border-left:3px solid #059669; border-radius:4px;">
+            <div style="display:flex; justify-content:space-between;">
+              <strong style="color:var(--primary-blue); font-size:0.95rem;">${st.title}</strong>
+              <span style="font-weight:700; color:#059669; font-size:0.85rem;">[${st.marks} Mark${st.marks > 1 ? 's' : ''}]</span>
+            </div>
+            <p style="margin-top:4px; font-size:0.95rem; color:#334155;">${st.explanation}</p>
+          </div>
+        `).join('');
+        card.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+            <strong style="color:var(--primary-dark); font-size:1.1rem;">Question ${idx+1}: ${prob.title} (${prob.marks} Marks)</strong>
+            <span class="status-badge ${state.problems[idx]?.isSolved ? 'badge-complete' : 'badge-skipped'}">
+              ${state.problems[idx]?.isSolved ? 'Full Marks' : '0 Marks / Incomplete'}
+            </span>
+          </div>
+          <div style="font-size:1.05rem; margin-bottom:0.5rem;">${prob.context}</div>
+          ${prob.diagramSVG ? `<div style="max-width:320px; margin:10px auto;">${prob.diagramSVG}</div>` : ''}
+          ${stepsHTML}
+        `;
+        reviewContainer.appendChild(card);
+      });
+      triggerMathTypeset();
+    }
+
+    document.getElementById('retakeQuizBtn').addEventListener('click', () => {
+      if (confirm("Reset current test parameters and retake?")) {
+        state.problems = {};
+        state.currentProblemIdx = 0;
+        state.isCompleted = false;
+        saveState();
+        renderProblem(0);
+        showView('sheet');
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const last = localStorage.getItem(`${STORAGE_KEY}_last_active`);
+      if (last) studentEmailInput.value = last;
+      triggerMathTypeset();
+    });
+  </script>
+</body>
+</html>
